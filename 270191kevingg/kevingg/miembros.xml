@@ -1,0 +1,12 @@
+<grupo>
+    <nombre>kevingg</nombre>
+    <url>https://svn.riouxsvn.com/270181kevingg</url>
+    <miembros>
+        <miembro>
+            <nombre>Kevin Gutierrez Gomez</nombre>
+            <codigo>201710146010</codigo>
+            <email>kgutierreg@eafit.edu.co</email>
+        </miembro>
+    </miembros>
+    <mainclass clase="LopriorMain" package="co.edu.eafit.dis.st0270.20191.kevingg"/>
+</grupo>

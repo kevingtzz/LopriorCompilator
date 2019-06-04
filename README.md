@@ -1,0 +1,2 @@
+# LopriorCompilator
+Logic expressions compilator

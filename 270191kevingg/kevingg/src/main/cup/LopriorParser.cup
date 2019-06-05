@@ -1,0 +1,23 @@
+
+
+terminal NAME, VARIABLE, FUNCTOR, PREDICATE, EXISTENTIAL, FORALL, NEGATION, CONDITIONAL,
+            BICONDITIONAL, AND, OR, LPAREN, RPAREN, COMMA;
+
+non terminal LopriorAbs, loprior, formulaWF;
+non terminal Term ,term, listTerm;
+
+start with loprior;
+
+loprior ::= formulaWF:formula
+        ;
+
+formulaWF ::= PREDICATE:pred LPAREN listTerm:list RPAREN                            {: RESULT = new PredicateNode((String) predicate, list); :}
+    |   FUNCTOR LPAREN listTerm:list RPAREN                                         {: RESULT = new FunctorNode((String) functor, list); :}
+    |   NEGATION formulaWF:formula                                                  {: RESULT = new NegationNode(formula); :}
+    |   LPAREN formulaWF:leftFormula AND formulaWF:rightFormula RPAREN              {: }
+    |   LPAREN formulaWF:leftFormula OR formulaWF:rightFormula RPAREN
+    |   LPAREN formulaWF:leftFormula CONDITIONAL formulaWF:rightFormula RPAREN
+    |   LPAREN formulaWF:leftFormula BICONDITIONAL formulaWF:rightFormula RPAREN
+    |   FORALL VARIABLE:variable formulaWF:formula
+    |   EXISTENTIAL VARIABLE:variable formulaWF:formula
+    ;

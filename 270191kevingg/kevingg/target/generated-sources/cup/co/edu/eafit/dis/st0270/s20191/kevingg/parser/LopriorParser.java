@@ -151,6 +151,13 @@ public class LopriorParser extends java_cup.runtime.lr_parser {
   public int error_sym() {return 1;}
 
 
+
+       	    public void systax_error(Symbol cur_token){}
+	    public void unrecovered_syntax_error(Symbol cur_token) throws Exception{
+	    	   throw new Exception();
+	    }
+       	    
+
 /** Cup generated class to encapsulate user supplied action code.*/
 @SuppressWarnings({"rawtypes", "unchecked", "unused"})
 class CUP$LopriorParser$actions {

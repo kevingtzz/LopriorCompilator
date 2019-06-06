@@ -1,22 +1,22 @@
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/ConditionalNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/target/generated-sources/jflex/co/edu/eafit/dis/st0270/s20191/kevingg/flex/LopriorLexer.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/ForallNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/Loprior.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/AndNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/OrNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/NegationNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/ExistentialNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/ASTfbf.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/BinaryNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/target/generated-sources/cup/co/edu/eafit/dis/st0270/s20191/kevingg/parser/LopriorSymbol.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/Unary.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/Nom.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/visitor/VisitorTERM.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/visitor/Visitorfbf.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/Var.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/target/generated-sources/cup/co/edu/eafit/dis/st0270/s20191/kevingg/parser/LopriorParser.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/PredicateNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/Func.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/LopriorMain.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/BiconditionalNode.java
-/Users/kevingtzz/OneDrive - Universidad EAFIT/EAFIT/Semester V/Formal languajes and compilers/Final/LopriorCompilator/270191kevingg/kevingg/src/main/java/co/edu/eafit/dis/st0270/s20191/kevingg/abs/ASTterm.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\target\generated-sources\cup\co\edu\eafit\dis\st0270\s20191\kevingg\parser\LopriorParser.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\Var.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\target\generated-sources\cup\co\edu\eafit\dis\st0270\s20191\kevingg\parser\LopriorSymbol.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\OrNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\target\generated-sources\jflex\co\edu\eafit\dis\st0270\s20191\kevingg\flex\LopriorLexer.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\ASTterm.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\ExistentialNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\LopriorMain.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\AndNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\ConditionalNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\Func.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\Loprior.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\Nom.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\ASTfbf.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\ForallNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\BinaryNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\NegationNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\Unary.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\visitor\VisitorTERM.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\PredicateNode.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\visitor\Visitorfbf.java
+C:\Users\admin\cygwin64\home\jvillac2\lopriorCompilator\270191kevingg\kevingg\src\main\java\co\edu\eafit\dis\st0270\s20191\kevingg\abs\BiconditionalNode.java

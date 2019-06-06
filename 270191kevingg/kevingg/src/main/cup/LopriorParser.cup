@@ -18,6 +18,13 @@ import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Var;
 import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Func;
 import java.util.ArrayList;
 
+parser code {:
+       	    public void systax_error(Symbol cur_token){}
+	    public void unrecovered_syntax_error(Symbol cur_token) throws Exception{
+	    	   throw new Exception();
+	    }
+       	    :}
+
 terminal NAME, VARIABLE, FUNCTOR, PREDICATE, EXISTENTIAL, FORALL, NEGATION, CONDITIONAL,
             BICONDITIONAL, AND, OR, LPAREN, RPAREN, COMMA;
 
@@ -33,7 +40,7 @@ loprior ::= formulaWF:formula                                                   
 formulaWF ::= PREDICATE:predicate LPAREN listTerm:list RPAREN                       {: RESULT = new PredicateNode((String) predicate, list); :}
     |   FORALL VARIABLE:variable formulaWF:formula                                  {: RESULT = new ForallNode((String) variable, formula); :}
     |   EXISTENTIAL VARIABLE:variable formulaWF:formula                             {: RESULT = new ExistentialNode((String) variable, formula); :}
-    |   NEGATION formulaWF:formula                                                  {: RESULT = new NegationNode(formula); :}
+    |   NEGATION LPAREN FormulaWF:formula RPAREN                                                  {: RESULT = new NegationNode(formula); :}
     |   LPAREN formulaWF:leftFormula AND formulaWF:rightFormula RPAREN              {: RESULT = new AndNode(leftFormula, rightFormula); :}
     |   LPAREN formulaWF:leftFormula OR formulaWF:rightFormula RPAREN               {: RESULT = new OrNode(leftFormula, rightFormula); :}
     |   LPAREN formulaWF:leftFormula CONDITIONAL formulaWF:rightFormula RPAREN      {: RESULT = new ConditionalNode(leftFormula, rightFormula); :}

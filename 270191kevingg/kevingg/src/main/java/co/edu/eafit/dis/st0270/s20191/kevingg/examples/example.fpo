@@ -1,0 +1,5 @@
+example1.fpo
+PP(a,b,c)               TRUE
+
+example2.fpo
+f(a)               TRUE

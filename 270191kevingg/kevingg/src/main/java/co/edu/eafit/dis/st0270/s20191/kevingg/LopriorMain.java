@@ -1,8 +1,7 @@
 package co.edu.eafit.dis.st0270.s20191.kevingg;
 
-import co.edu.eafit.dis.st0270.s20191.kevingg.parser.LopriorParser;
-import co.edu.eafit.dis.st0270.s20191.kevingg.parser.LopriorSymbol;
-import co.edu.eafit.dis.st0270.s20191.kevingg.lex.LopriorLexer;
+import co.edu.eafit.dis.st0270.s20191.kevingg.parser.*;
+import co.edu.eafit.dis.st0270.s20191.kevingg.flex.*;
 import java_cup.runtime.*;
 import gnu.getopt.Getopt;
 import java.io.FileReader;
@@ -18,7 +17,7 @@ public class LopriorMain {
                 FileReader fr = new FileReader(args[0]);
                 //LopriorLexer lexer = new LopriorLexer(fr);
                 //LopriorParser parser = new LopriorParser(lexer);
-
+                
                 //parser.parse();
             }
             catch (FileNotFoundException fnfe) {

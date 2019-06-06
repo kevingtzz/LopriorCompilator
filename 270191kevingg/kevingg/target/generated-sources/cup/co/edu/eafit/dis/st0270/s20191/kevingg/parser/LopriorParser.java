@@ -6,6 +6,8 @@
 package co.edu.eafit.dis.st0270.s20191.kevingg.parser;
 
 import java_cup.runtime.*;
+import co.edu.eafit.dis.st0270.s20191.kevingg.flex.LopriorLexer;
+import co.edu.eafit.dis.st0270.s20191.kevingg.Parser.*;
 import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ASTfbf;
 import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ASTterm;
 import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Loprior;

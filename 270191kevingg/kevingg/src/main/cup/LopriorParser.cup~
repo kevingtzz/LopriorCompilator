@@ -40,7 +40,7 @@ loprior ::= formulaWF:formula                                                   
 formulaWF ::= PREDICATE:predicate LPAREN listTerm:list RPAREN                       {: RESULT = new PredicateNode((String) predicate, list); :}
     |   FORALL VARIABLE:variable formulaWF:formula                                  {: RESULT = new ForallNode((String) variable, formula); :}
     |   EXISTENTIAL VARIABLE:variable formulaWF:formula                             {: RESULT = new ExistentialNode((String) variable, formula); :}
-    |   NEGATION LPAREN formulaWF:formula RPAREN                                                  {: RESULT = new NegationNode(formula); :}
+    |   NEGATION LPAREN FormulaWF:formula RPAREN                                                  {: RESULT = new NegationNode(formula); :}
     |   LPAREN formulaWF:leftFormula AND formulaWF:rightFormula RPAREN              {: RESULT = new AndNode(leftFormula, rightFormula); :}
     |   LPAREN formulaWF:leftFormula OR formulaWF:rightFormula RPAREN               {: RESULT = new OrNode(leftFormula, rightFormula); :}
     |   LPAREN formulaWF:leftFormula CONDITIONAL formulaWF:rightFormula RPAREN      {: RESULT = new ConditionalNode(leftFormula, rightFormula); :}

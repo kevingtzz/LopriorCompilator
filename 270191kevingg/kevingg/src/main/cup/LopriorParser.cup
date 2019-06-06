@@ -1,23 +1,48 @@
+import java_cup.runtime.*;
 
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ASTfbf;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ASTterm;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Loprior;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.PredicateNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ForallNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ExistentialNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.NegationNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.AndNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.OrNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.ConditionalNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.BiconditionalNode;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Nom;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Var;
+import co.edu.eafit.dis.st0270.s20191.kevingg.abs.Func;
+import java.util.ArrayList;
 
 terminal NAME, VARIABLE, FUNCTOR, PREDICATE, EXISTENTIAL, FORALL, NEGATION, CONDITIONAL,
             BICONDITIONAL, AND, OR, LPAREN, RPAREN, COMMA;
 
-non terminal LopriorAbs, loprior, formulaWF;
-non terminal Term ,term, listTerm;
+non terminal ASTfbf loprior, formulaWF;
+non terminal ASTterm term;
+non terminal ArrayList<ASTterm> listTerm;
 
 start with loprior;
 
-loprior ::= formulaWF:formula
+loprior ::= formulaWF:formula                                                       {: RESULT = new Loprior(formula); :}
         ;
 
-formulaWF ::= PREDICATE:pred LPAREN listTerm:list RPAREN                            {: RESULT = new PredicateNode((String) predicate, list); :}
-    |   FUNCTOR LPAREN listTerm:list RPAREN                                         {: RESULT = new FunctorNode((String) functor, list); :}
+formulaWF ::= PREDICATE:predicate LPAREN listTerm:list RPAREN                       {: RESULT = new PredicateNode((String) predicate, list); :}
+    |   FORALL VARIABLE:variable formulaWF:formula                                  {: RESULT = new ForallNode((String) variable, formula); :}
+    |   EXISTENTIAL VARIABLE:variable formulaWF:formula                             {: RESULT = new ExistentialNode((String) variable, formula); :}
     |   NEGATION formulaWF:formula                                                  {: RESULT = new NegationNode(formula); :}
-    |   LPAREN formulaWF:leftFormula AND formulaWF:rightFormula RPAREN              {: }
-    |   LPAREN formulaWF:leftFormula OR formulaWF:rightFormula RPAREN
-    |   LPAREN formulaWF:leftFormula CONDITIONAL formulaWF:rightFormula RPAREN
-    |   LPAREN formulaWF:leftFormula BICONDITIONAL formulaWF:rightFormula RPAREN
-    |   FORALL VARIABLE:variable formulaWF:formula
-    |   EXISTENTIAL VARIABLE:variable formulaWF:formula
+    |   LPAREN formulaWF:leftFormula AND formulaWF:rightFormula RPAREN              {: RESULT = new AndNode(leftFormula, rightFormula); :}
+    |   LPAREN formulaWF:leftFormula OR formulaWF:rightFormula RPAREN               {: RESULT = new OrNode(leftFormula, rightFormula); :}
+    |   LPAREN formulaWF:leftFormula CONDITIONAL formulaWF:rightFormula RPAREN      {: RESULT = new ConditionalNode(leftFormula, rightFormula); :}
+    |   LPAREN formulaWF:leftFormula BICONDITIONAL formulaWF:rightFormula RPAREN    {: RESULT = new BiconditionalNode(leftFormula, rightFormula); :}
+    ;
+
+listTerm ::= term:t COMMA listTerm:lista                                            {: lista.add(t); RESULT = lista; :}
+    | term:t                                                                        {: ArrayList<ASTterm> lista = new ArrayList(); lista.add(t); RESULT = lista; :} 
+    ;
+
+term  ::= FUNCTOR:functor LPAREN listTerm:list RPAREN                                  {: RESULT = new Func((String) functor, list); :}
+    |   NAME:name                                                                   {: RESULT = new Nom((String) name); :}
+    |   VARIABLE:variable                                                           {: RESULT = new Var((String) variable); :}
     ;
